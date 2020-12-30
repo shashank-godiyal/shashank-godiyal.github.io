@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Tab</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p id="warning">Required field is followed by *</p>
+    <fieldset>
+      <legend>Enter the information</legend>
+      <form action="">
+        <p>First Name: &nbsp; *<input type="text" name="fname" required/></p>
+        <p>Last Name: &nbsp;&nbsp;*<input type="text" name="lname" /></p>
+
+        <fieldset>
+          <legend>Gender*</legend>
+          <p>
+            Male:
+            <input type="radio" name="gender" id="male" required/>
+            &nbsp;&nbsp;&nbsp;&nbsp; Female:
+            <input type="radio" name="gender" id="female" required/>
+            &nbsp;&nbsp;&nbsp;&nbsp; Other:
+            <input type="radio" name="gender" id="other" required/>
+          </p>
+        </fieldset>
+
+        <p>D-O-B:&nbsp; *<input type="date" name="d-o-b" id="d-o-b" required/></p>
+        <p>Country: *<input type="text" name="country" id="country" required> </p>
+        <p>Email: &nbsp; *<input type="email" name="email" id="email" required/></p>
+        <p>Password: *<input type="password" name="password" id="password" required/></p>
+        <p>Mobile: <input type="number" name="mobile-no" id="mobile-no" /></p>
+
+        <center>
+            <button type="reset" value="reset" class="buttons">Reset</button>
+    
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+            <button type="submit" value="register" class="buttons">Register</button>
+          </center>
+          <br />
+      </form>
+      
+    </fieldset>
+
+    <p>Already have an account <a href="login.html">Login</a></p>
+  </body>
+</html>
